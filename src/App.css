@@ -1,4 +1,70 @@
 * {
   box-sizing: border-box;
-  margin: 0 auto;
+  margin: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#rick-and-morty-logo {
+  margin: 1em 0;
+  max-width: 500px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.cta {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 1em;
+  text-align: left;
+}
+
+.cta img {
+  border-radius: 50%;
+  margin: 0 1em;
+  height: 30vmin;
+}
+
+.talkbubble {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  color: black;
+  border: 2px solid black;
+  width: 80%;
+  padding: 1em;
+  background: beige;
+  position: relative;
+  -moz-border-radius: 25px;
+  -webkit-border-radius: 25px;
+  border-radius: 25px;
+}
+.talkbubble:before {
+  content: "";
+  position: absolute;
+  right: 100%;
+  top: 50%;
+  width: 0;
+  height: 0;
+  border-top: 13px solid transparent;
+  border-right: 30px solid beige;
+  border-bottom: 13px solid transparent;
+}
+
+button {
+  align-self: center;
+  background-color: teal;
+  font-size: 2em;
+  margin-top: .5em;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
 }
